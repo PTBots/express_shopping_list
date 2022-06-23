@@ -1,0 +1,30 @@
+@base_url=http://localhost:3000
+
+GET {{base_url}}/items
+
+
+####
+
+
+POST {{base_url}}/items
+Content-Type: application/json
+
+{
+    "name":"cola",
+    "price":123.2
+}
+
+####
+
+GET {{base_url}}/items/cola
+
+
+####
+
+PATCH {{base_url}}/items/cola
+Content-Type: application/json
+
+{
+    "name":"cola1",
+    "price":1.2
+}
